@@ -1,3 +1,3 @@
-# clase-ie2020-01
+# ie2020
 
-Primera clase de HTML, CSS y JS. Esto es un cambio.
+Sitio del curso de [https://wiki.ead.pucv.cl/Imagen_Escrita_2020](Imagen Escrita 2020)
