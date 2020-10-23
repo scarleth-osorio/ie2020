@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Interpolación de Colores</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Color Interpolation</h1>
+        <input type="range" id="control" min="2" max="200" value="30" step="1" oninput="redraw()" />
+        <table>
+            <tr>
+                <td class='narrow'><input type="color" id="c1" oninput="redraw()" value="#1348ad" /></td>
+                <td></td>
+                <td class='narrow'><input type="color" id="c2" oninput="redraw()" value="#ff5800" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="sketch"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="color" id="c3" oninput="redraw()" value="#b0f8e2" /></td>
+                <td></td>
+                <td><input type="color" id="c4" oninput="redraw()" value="#f4e423" /></td>
+            </tr>
+        </table>
+    </div>
+</body></html>

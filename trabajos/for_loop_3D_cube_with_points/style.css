@@ -1,0 +1,14 @@
+html, body {
+  padding: 0;
+  background-color: black;
+  width: 400px;
+  margin: 0 auto;
+}
+canvas {
+  display: block;
+}
+
+input[type="range"]{
+  width: 500px; 
+  margin: 5px 0;
+}

@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  margin: 2em auto 0 auto;
+  background-color: dimgray;
+}
+
+canvas {
+  display: block;
+}
+
+input[type="range"] {
+  width: 600px;
+  margin-bottom: 20px
+}

@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: FireBrick;
+}
+canvas {
+  display: block;
+}
+
+input[type="range"]{
+ margin: 20px;
+ width: 500px; 
+}

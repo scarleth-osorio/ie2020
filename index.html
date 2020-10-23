@@ -1,35 +1,54 @@
 <!DOCTYPE html><html lang="es">
     <head>
-    <title>Página de Ejemplo</title>
-    <script src="p5.js"></script>
-    <script src="sketch.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Imagen Escrita 2020</title>
+    <script src="js/p5.js"></script>
+   <script src="js/sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
   </head>
-  <body>
-    <div class="container">
-      <h1>Bienvenidos a Imagen Escrita</h1>
-
-      <div id="p5"></div>
-
-      <p>Esta página sólo sirve de ejemplo para demostrar cómo se estructura un archivo <acronym title="hypertext markup language">HTML</acronym>. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+  <body id="iebody">
+    <section id="p5"></section>
+    <div id="container">
+      <section id="intro">
+        <h1>imagen escrita</h1>
   
-      <img src="img/acto-del-momento-simultaneo-2020828-15535.png" title="imagen cualquiera">
+        <p>Este curso corresponde a una introducción al diseño de software como una herramienta de expresión artística construyendo obras visuales estáticas, cinéticas o interactivas. Aquí trataremos los fundamentos de la forma computacional y de la estructura de la programación gráfica en consonancia con principios matemáticos abstractos. Los estudiantes se familiarizarán con algoritmos básicos, geometría computacional y simulación cinemática además de los conceptos básicos y necesarios para construir programas; como los diferentes tipos de datos, iteraciones, funciones, recursiones y el concepto de objeto, entre otros. Este ramo busca equilibrar las nociones matemáticas abstractas de la computación con la expresión plástica y formal de los algoritmos, permitiendo una mirada más amplia y lúdica de la forma computacional. Tener experiencia previa en programación no es un requisito para este curso.</p>
+      </section>
+  
+      <section id="exploraciones">
+        <h3>Exploraciones</h3>
+        <nav>
+          <li><a href="trabajos/stamp" title="Primer trabajo">Stamp!</a></li>
+          <li><a href="trabajos/001/">Interpolación de Color</a></li>
+          <li><a href="trabajos/color_moire/">Efecto Moirè de Color</a></li>
+          <li><a href="trabajos/CSV_example_Plotting_data/">Ejemplo de visualización de datos</a></li>
+          <li><a href="trabajos/for_loop_3D_cube_with_points/">Cubo con ciclo 'for' tridimensional</a></li>
+          <li><a href="trabajos/noise_machine/">Máquina de Ruido: Horizontes</a></li>
+          <li><a href="trabajos/pattern_01/">Trama a partir de 2 inclinaciones de una línea</a></li>
+          <li><a href="trabajos/Spiral_noise/">Dibujo espiral + Ruido (noise)</a></li>
+          <li><a href="trabajos/Tramas_Moire/">Tramas Moirè</a></li>
+          <li><a href="trabajos/Lewitt_2_con_arreglo/">Interpretación de obra de Sol Lewitt</a></li>
+          <li><a href="trabajos/Noise_+_Sin/">Suma de funciones: Seno + Ruido</a></li>
+          <li><a href="trabajos/Triangulo_de_Serpinski/">Recursividad: el Triángulo de Serpinski</a></li>
+          <li><a href="trabajos/Wanderer">Partículas Errantes</a></li>
+          <li><a href="trabajos/Wanderer_mesh/">Trama de Puntos Errantes</a></li>
+        </nav>
+      </section>
+      <section id="estudiantes">
+        <h3>Estudiantes</h3>
+        <nav>
 
-      <h3>Trabajos</h3>
-      <ol>
-        <li><a href="trabajos/stamp" title="Primer trabajo">Stamp!</a></li>
-        <li>Segundo elemento</li>
-        <li>Tercer elemento</li>
-        <li>Etcétera</li>
-      </ol>
+          <a href="https://javieraruizm.github.io/situacioncompartida/"><img src="https://javieraruizm.github.io/situacioncompartida/imagenjavieraIE.jpg"><span class="name">Javiera Ruiz</span></a>
 
+          <a href="https://josefinaschiappacasse.github.io/primer-proyecto-josefian-S.B/"><img src="https://josefinaschiappacasse.github.io/primer-proyecto-josefian-S.B/juncal_josefinaschiappacasse_proyecIE%20(2).jpg"><span class="name">Josefina Schiappacasse</span></a>
+        </nav>
+      </section>
+      <footer>
+        <div>
+          <p>Este curso es de la e[ad] Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso. El código fuente de este sitio está <a href="https://github.com/hspencer/ie2020" title="Github">acá</a>. Todos los trabajos están bajo una <a href="https://opensource.org/licenses/artistic-license-2.0">licencia artística</a>.</p>
+        </div>
+      </footer>
     </div>
-<footer>
-  <div class="container">
-    <p>Este es el pie de página. Los archivos están <a href="https://github.com/hspencer/clase-ie2020-01" title="Repositorio de Github de la primera clase">acá</a>.</p>
-  </div>
-</footer>
 
 </body>
 </html>
