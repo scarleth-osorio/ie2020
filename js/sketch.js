@@ -40,16 +40,16 @@ function regen() {
   print("sw = "+sw+"\tsh = "+sh)
   
   if(displayWidth < displayHeight){
-    let nm1 = new NoiseMachine(0, -20, sw/2, sh+40, 100, HALF_PI, color("cyan"));
+    let nm1 = new NoiseMachine(0, -20, sw/2, sh+40, 200, HALF_PI, color(245, 251, 20, 43));
     nm.push(nm1);
   
-    let nm2 = new NoiseMachine(sw, -20, sw/2, sh+40, 800, HALF_PI, color("fuchsia"));
+    let nm2 = new NoiseMachine(sw, -20, sw/2, sh+40, 800, HALF_PI, color(202, 43, 80, 20));
     nm.push(nm2);;
   }else{
-    let nm1 = new NoiseMachine(-20, 0, sh/2, sw+40, 500, 0, color("cyan"));
+    let nm1 = new NoiseMachine(-20, 0, sh/2, sw+40, 500, 0, color(245, 251, 20, 43));
     nm.push(nm1);
   
-    let nm2 = new NoiseMachine(-20, sh, sh/2, sw+40, 1000, 0, color("fuchsia"));
+    let nm2 = new NoiseMachine(-20, sh, sh/2, sw+40, 1000, 0, color(202, 43, 80, 20));
     nm.push(nm2);;
   }
 

@@ -3,8 +3,12 @@ let sliderCube, sliderRY, sliderRX;
 let sliderSphereSize;
 let cubeSize;
 
+let body;
+
 function setup() {
-  createCanvas(500, 500, WEBGL);
+  body = document.getElementById("body");
+ let bodyWidth = body.offsetWidth;
+  createCanvas(bodyWidth, 500, WEBGL);
   cursor(CROSS);
   sliderX = createSlider(2, 30, 16, 1);
   sliderY = createSlider(2, 30, 16, 1);

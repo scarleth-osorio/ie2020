@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #FFF;
-  width: 700px;
+  width: 85%;
   margin: 0 auto;
 }
 canvas {
@@ -10,6 +10,6 @@ canvas {
 }
 
 input[type='range']{
- width: 600px;
+ width: 100%;
   padding: 10px;
 }

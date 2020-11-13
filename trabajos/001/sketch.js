@@ -10,7 +10,7 @@ function preload(){
 }
 
 function setup(){
-    let sketch = createCanvas(w, 300);
+    let sketch = createCanvas(w, windowHeight - 300);
     sketch.parent("sketch"); 
     
     slider = select("#control");

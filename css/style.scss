@@ -23,16 +23,18 @@ body{
     margin: 0;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 10px;
+    grid-auto-flow: row;
 }
 
 section{
+    border-left: 1px dashed black;
     padding: 0 2em;
     height: auto;
     &#intro{
         grid-column: span 2;
         p{
-            font-size: 130%;
-            line-height: 170%;
+            font-size: 1.2em;
+            line-height: 1.4em;
         }
     } 
     &#exploraciones{
@@ -44,7 +46,7 @@ section{
             row-gap: 10px;
             margin-bottom: 20px;
             li{
-                display: inline-block;
+                display: flex;
                 background-color: rgba(255, 255, 0, 0.363);
                 mix-blend-mode: multiply;
                 transition: all ease 1s;
@@ -53,14 +55,16 @@ section{
                     color:white;
                 }
                 a{
-                    display: inline-block;
-                    padding: 4px;
+                    display: block;
+                    width: 100%;
+                    flex-direction: column;
+                    height: auto;
+                    padding: 1ex;
                     font-size: 14px;
                     line-height: 14px;
                     color: black;
-                    // mix-blend-mode: color-burn;
                     text-decoration: none;
-                    transition: all ease 1s;
+                    transition: color ease 1s, background-coloir ease 1.5s;
                     &:hover{
                         color: white;
                     }
@@ -79,22 +83,29 @@ section{
             row-gap: 10px;
             margin-bottom: 20px;
             a{
-                display: block;
+                display: flex;
                 position: relative;
                 mix-blend-mode: blend;
                 grid-column: span 2;
                 transition: all ease 1s;
                 img{
-                    width: 100%;
+                    width: auto;
                     height: 100%;
+                    mix-blend-mode: multiply;
                 }
 
                 .name{
+                    font-family: 'DM Serif Display', serif;
                     position: absolute;
-                    bottom: 4px;
-                    left: 4px;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    padding: 1ex 2ex;
                     color: white;
                     margin: 4px;
+                    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
+                    //background-color: rgba(45, 53, 53, 0.22);
+                    border-bottom: 1px dashed black; 
                 }
 
                 &:hover{
@@ -113,6 +124,7 @@ h1, h2, h3, h4{
 
 h1{
     font-size: 3em;
+    line-height: 1em;
 }
 
 footer{
@@ -120,7 +132,7 @@ footer{
     padding: 1ex 1em;
     margin: 0;
     grid-column: span 6;
-    background-color: rgba(0, 81, 255, 0.377);
+    background-color: rgba(34, 31, 37, 0.219);
     mix-blend-mode: multiply;
     a{
         color: black;

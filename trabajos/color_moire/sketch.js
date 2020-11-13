@@ -1,13 +1,17 @@
 
 
 let points = [];
-let num = 9999;
-let sw = 5;
+let num = 99999;
+let sw = 1.5;
 let p1, p2;
 let moveXs, moveYs, rots, zooms, x, y, r, z;
 
+let body;
+
 function setup() {
-  createCanvas(700, 700);
+  body = document.getElementById("body");
+ let bodyWidth = body.offsetWidth;
+  createCanvas(bodyWidth, 700);
   for (let i = 0; i < num; i++) {
     points.push(createVector(random(width), random(height)));
   }
