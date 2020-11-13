@@ -23,13 +23,12 @@ body {
   margin: 0;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
   grid-auto-flow: row;
 }
 
 section {
-  border-left: 1px dashed black;
   padding: 0 2em;
   height: auto;
 }
@@ -43,55 +42,8 @@ section#intro p {
   line-height: 1.4em;
 }
 
-section#exploraciones nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  grid-auto-rows: 80px;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 10px;
-  margin-bottom: 20px;
-}
-
-section#exploraciones nav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: rgba(255, 255, 0, 0.363);
-  mix-blend-mode: multiply;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
-}
-
-section#exploraciones nav li:hover {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
-}
-
-section#exploraciones nav li a {
-  display: block;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: auto;
-  padding: 1ex;
-  font-size: 14px;
-  line-height: 14px;
-  color: black;
-  text-decoration: none;
-  -webkit-transition: color ease 1s, background-coloir ease 1.5s;
-  transition: color ease 1s, background-coloir ease 1.5s;
-}
-
-section#exploraciones nav li a:hover {
-  color: white;
-}
-
 section#estudiantes {
+  border-left: 1px dashed black;
   grid-column: span 3;
 }
 
@@ -125,16 +77,69 @@ section#estudiantes nav a img {
 }
 
 section#estudiantes nav a .name {
-  font-family: 'DM Serif Display', serif;
+  text-align: right;
   position: absolute;
   width: 100%;
   bottom: 0;
-  left: 0;
+  right: 0;
   padding: 1ex 2ex;
-  color: white;
-  margin: 4px;
-  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.876);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.822), 2px 2px 3px rgba(255, 255, 255, 0.609);
   border-bottom: 1px dashed black;
+}
+
+section#exploraciones {
+  border-left: 1px dashed black;
+}
+
+section#exploraciones nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-auto-rows: 80px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+section#exploraciones nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  border-radius: 3px;
+}
+
+section#exploraciones nav li:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+section#exploraciones nav li a {
+  display: block;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 1ex;
+  font-size: 14px;
+  line-height: 14px;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color ease 1s, background-coloir ease 1.5s;
+  transition: color ease 1s, background-coloir ease 1.5s;
+}
+
+section#exploraciones nav li a:hover {
+  color: white;
 }
 
 h1, h2, h3, h4 {
@@ -161,5 +166,16 @@ footer a {
   font-weight: bolder;
   text-decoration: underline;
   cursor: crosshair;
+}
+
+@media only screen and (max-width: 1024px) {
+  #container {
+    display: block;
+  }
+  section#exploraciones nav li a {
+    font-size: 12px;
+    word-break: keep-all;
+    font-weight: bolder;
+  }
 }
 /*# sourceMappingURL=style.css.map */
